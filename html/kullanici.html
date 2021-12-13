@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <link href="../css/kullanici.css" rel="stylesheet">
+        <link rel="shortcut icon" type="jpeg" href="../images/logo.jpeg"/>
+    </head>
+    <body>
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">KAYIT OL</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>KAYIT OL</h1>
+      
+      <hr>
+      <label for="email"><b>E-POSTA</b></label>
+      <input type="text" placeholder="E-POSTA GİRİNİZ" name="email" required>
+
+      <label for="psw"><b>ŞİFRE</b></label>
+      <input type="password" placeholder="ŞİFREYİ GİRİNİZ" name="psw" required>
+
+      <label for="psw-repeat"><b>ŞİFREYİ TEKRAR GİRİNİZ </b></label>
+      <input type="password" placeholder="ŞİFREYİ TEKRAR GİRİNİZ" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Beni Hatırla
+      </label>
+
+      
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">VAZGEÇ</button>
+        <button type="submit" class="signupbtn">KAYIT OL</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script src="../js/kyt.js">
+</script>
+
+
+
+
+
+
+
+
+        </body>
+</html>

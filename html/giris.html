@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="../css/giris.css" rel="stylesheet">
+    <link rel="shortcut icon" type="jpeg" href="../images/logo.jpeg"/>
+
+</head>
+</html>
+<body>
+
+
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">GİRİŞ YAP</button>
+
+    <div id="id01" class="modal">
+      
+      <form class="modal-content animate" action="/action_page.php" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="../images/logo.jpeg" alt="Avatar" class="avatar">
+        </div>
+    
+        <div class="container">
+          <label for="uname"><b>E-POSTA</b></label>
+          <input type="text" placeholder="E-POSTA GİRİNİZ" name="uname" required>
+    
+          <label for="psw"><b>ŞİFRE</b></label>
+          <input type="password" placeholder="ŞİFRE GİRİNİZ" name="psw" required>
+            
+          <button type="submit">GİRİŞ YAPINIZ</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Beni hatırla
+          </label>
+        </div>
+    
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">VAZGEÇ</button>
+          <span class="psw"> <a href="#">ŞİFREMİ UNUTTUM?</a></span>
+        </div>
+      </form>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+</body>
